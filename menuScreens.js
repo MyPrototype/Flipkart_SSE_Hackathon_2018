@@ -63,12 +63,12 @@ startScreen.draw = () => {
   startScreen.stars.forEach((value) => drawPoint(...value));
 
   startScreen.arrow.draw()
-  writeCentered(80, "Flipkart SSE Hackathon 2018 SPACE GAME", 5);
+  writeCentered(80, "Flipkart SSE Hackathon", 5);
   writeCentered(150, "Chalo aa jao khelte h", 2.7);
-  writeCentered(280, "1 Player start", 2);
-  writeCentered(330, "2 Player start", 2);
+  writeCentered(280, "1 Player Start", 2);
+  writeCentered(330, "2 Player Start", 2);
   writeCentered(380, "Credits", 2);
-  writeCentered(470, "'wasd' - Player 1     Player 2 - arrows", 1.2);
+  writeCentered(470, "'WASD' - Player 1     Player 2 - Arrows", 1.2);
   writeCentered(500, "Enter - Go            Esc - Go back", 1.2);
   writeCentered(570, VERSION);
 }
