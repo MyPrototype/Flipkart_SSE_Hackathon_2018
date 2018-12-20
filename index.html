@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+SpaceGame
+This is an attempt of making the game pong using modern programming languages
+
+Copyright (C) 2018  ukoolz - <tagdadon@gmail.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+  <head>
+    <title>Space Game Build for Flipkart SSE Hackathon</title>
+    <meta name="description" content="This is an attempt of making the game spacewar using modern programming languages">
+    <link id="favicon" rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="gameloop.js"></script>
+    <script src="draw.js"></script>
+    <script src="hershey.js"></script>
+    <script src="gameScreens.js"></script>
+    <script src="menuScreens.js"></script>
+    <!-- twitter -->
+    <meta name="twitter:title" content="Space Game">
+    <meta name="twitter:description" content="This is an attempt of reproducing the game spacewar using modern programming languages.">
+    <meta name="twitter:image" content="https://github.com/MyPrototype/SpaceGame/raw/master/assets/opengraph.png">
+    <!-- opengraph -->
+    <meta property="og:title" content="SpaceGame" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://MyPrototype.github.io/SpaceGame/" />
+    <meta property="og:image" content="https://github.com/MyPrototype/SpaceGame/raw/master/assets/opengraph.png" />
+    <meta property="og:description" content="This is an attempt of reproducing the game spacewar using modern programming languages." />
+  </head>
+  <body onload="startGame()">
+    <div class="container">
+      <div id="game-frame">
+      </div>
+      <div class="footer">
+        <p>
+          <a href="https://github.com/MyPrototype/SpaceGame">
+            <img src="assets/GitHub-Mark-Light-32px.png"></img><span>Check it on GitHub!</span>
+          </a>
+        </p>
+        <p>
+          Copyright (c) 2018 ukoolz -
+          <a href="mailto:tagdadon@gmail.com?Subject=SpaceGame">
+            &lt;mailto:tagdadon@gmail.com&gt;
+          </a>
+        </p>
+        <p>
+          This software is under a
+          <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL3</a> license. Have fun!
+          <span style="font-size: 2em; vertical-align: top;">😉</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
