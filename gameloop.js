@@ -37,9 +37,9 @@ window.addEventListener("keydown", (event) => {
 // Game object
 let Game = {
   fps: 80,
-  width: 600,
-  height: 600,
-  radius: 300
+  width: 1000,
+  height: 1000,
+  radius: 500
 };
 
 // Screens objects
@@ -90,10 +90,10 @@ Game.start = function() {
   Game.canvas.width = Game.width;
   Game.canvas.height = Game.height;
   Game.context = Game.canvas.getContext("2d"); // Get canvas context
-  Game.context.shadowColor = "#080";
+  Game.context.shadowColor = "#FFFF00";
   Game.context.shadowOffsetX = 0;
   Game.context.shadowOffsetY = 0;
-  Game.context.shadowBlur = 20;
+  Game.context.shadowBlur = 50;
   document.getElementById("game-frame").appendChild(Game.canvas); // Add canvas to game-frame
 
   // mask outside border

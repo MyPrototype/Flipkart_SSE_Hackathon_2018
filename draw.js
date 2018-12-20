@@ -23,14 +23,14 @@ const ROTATION_SPEED = 4*Math.PI/180;
 const THRUSTER_SPEED = 0.01;
 const FIRE_LENGTH = 10;
 const SHOT_DISTANCE = 250;
-const SHOT_SPEED = 2;
-const SHOT_SIZE = 5;
+const SHOT_SPEED = 3;
+const SHOT_SIZE = 10;
 const SHOT_INTERVAL = 300;
 const BLACKHOLE_SIZE = 12;
 const MAX_ACCEL = 1;
 const MAX_SPEED = 1;
-const BLAST_SIZE = 50;
-const VECTOR_COLOR = "#0F0"
+const BLAST_SIZE = 100;
+const VECTOR_COLOR = "#FFFF00"
 const player1Vectors = [
   [[8, 0], [1, 2], [-1, 2], [-8, 1], [-8, -1], [-1, -2], [1, -2], [8, 0]],
   [[-1,  2], [-6,  4], [-8,  4], [-5,  1.5]],
@@ -115,6 +115,11 @@ function writeText(x, y, text, size=1, width=1, color=VECTOR_COLOR) {
 function writeCentered(y, text, size=1, width=1, color=VECTOR_COLOR) {
   const textLength = phraseLength(text, size);
   writeText(Game.width/2-textLength/2, y, text, size, width, color);
+}
+
+function writeCenteredBold(y, text, size=1, width=3, color=VECTOR_COLOR) {
+    const textLength = phraseLength(text, size);
+    writeText(Game.width/2-textLength/2, y, text, size, width, color);
 }
 
 function addGravity(element, cx, cy, gravity) {

@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 "use strict";
 
-const STARS = 40;
+const STARS = 60;
 const GRAVITY = 50;
 
 const p1Spawn = [150, 150];
@@ -42,8 +42,8 @@ versusScreen.init = () => {
   // Setup background
   versusScreen.stars = versusScreen.makeStars();
   // Create players
-  Game.player1 = new Ship(...p1Spawn, player1Keys, player1Vectors, 1.5, Game.laser1);
-  Game.player2 = new Ship(...p2Spawn, player2Keys, player2Vectors, 1.5, Game.laser2);
+  Game.player1 = new Ship(...p1Spawn, player1Keys, player1Vectors, 3.5, Game.laser1);
+  Game.player2 = new Ship(...p2Spawn, player2Keys, player2Vectors, 3.5, Game.laser2);
   Game.player1.updateRotation(Math.PI/4);
   Game.player2.updateRotation(-3*Math.PI/4);
   versusScreen.blackhole = new Blackhole(Game.width/2, Game.height/2)
